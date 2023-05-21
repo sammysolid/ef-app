@@ -13,3 +13,18 @@ backend:
       # ssl: require # see https://www.postgresql.org/docs/current/libpq-ssl.html Table 33.1. SSL Mode Descriptions (e.g. require)
         #ca: # if you have a CA file and want to verify it you can uncomment this section
         #$file: <file-path>/ca/server.crt
+auth:
+  # see https://backstage.io/docs/auth/ to learn about auth providers
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: 016dSECRETSTUFFff9
+        clientSecret: 5ae26SECRETSECRETSECRET42698a381
+integrations:
+  github:
+    - host: github.com
+      token: ghp_ESECRETSECRETSECRETWWazC0NGc2I # this should be the token from GitHub
+  azure:
+    - host: dev.azure.com
+      token: xxSECRETSECRETjdoa
