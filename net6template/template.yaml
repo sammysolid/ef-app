@@ -70,10 +70,10 @@ spec:
 
     - id: register
       name: Register
-        action: catalog:register
-        input:
-          repoContentsUrl: '{{steps.publish.output.repoContentsUrl}}'
-          catalogInfoPath: '/catalog-info.yml'
+      action: catalog:register
+      input:
+        repoContentsUrl: '{{steps.publish.output.repoContentsUrl}}'
+        catalogInfoPath: '/catalog-info.yml'
   
   output:
     remoteUrl: '{{steps.publish.output.remoteUrl}}'
