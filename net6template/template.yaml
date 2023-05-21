@@ -34,17 +34,18 @@ spec:
           ui:options:
             allowedKinds:
               Groups
+
     - title: Choose a location
-        required:
-          - repoUrl
-        properties:
-          repoUrl:
-            title: Repo location
-            type: string
-            ui:field: RepoUrlPicker
-            ui:options:
-              allowedHosts:
-                - dev.azure.com
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repo location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - dev.azure.com
   steps:
     - id: template
       name: Fetch skeleton + template
