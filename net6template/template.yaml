@@ -13,7 +13,7 @@ spec:
   type: service
 
   parameters:
-    -title: component title info
+    - title: component title info
       required:
         - component_id
         - owner
